@@ -1,0 +1,15 @@
+
+<div class="container">
+        <div *ngFor="let product of productslist" class="row justify-content-center align-items-center border-secondary">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <img src="{{product.image_link}}" class="card-img-top" alt="...">
+                </div>
+                <div class="col-3">
+                        <p>{{product.name}}</p>
+                    
+                        <p>{{product.price_sign}}</p><p> {{product.price}}</p>
+                    
+                </div> 
+            <!--Modal-->
+        </div>
+</div>

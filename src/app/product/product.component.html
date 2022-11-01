@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="row">
+        <div *ngFor="let product of productslist" class="col-6 col-md-4 col-lg-2 border p-3">
+            <button type="button" class="btn btn-light border-light" style="background-color: white;">
+                <img src="{{product.image_link}}" class="card-img-top" alt="...">
+                    <div class="col">
+                        <p class="card-title">{{product.name}}</p>
+                    </div>
+                    <div class="col align-self-end">
+                        <p>{{product.price_sign}}</p><p> {{product.price}}</p>
+                    </div>
+                    
+                    <div class="btn btn-outline-secondary btn-sm m-auto mb-0">Add to cart</div>
+            </button> 
+            <!--Modal-->
+        </div>
+    </div>
+</div>
