@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProductComponent } from './product/product.component';
@@ -8,6 +8,8 @@ import { CartComponent } from './cart/cart.component';
 import { AdminComponent } from './admin/admin.component';
 import { ViewProductsComponent } from './view-products/view-products.component';
 import { EditDetailsComponent } from './edit-details/edit-details.component';
+import { NewProductComponent } from './new-product/new-product.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
@@ -40,6 +42,14 @@ const routes: Routes = [
       {
         path:'editDetails',
         component: EditDetailsComponent
+      },
+      {
+        path:'newProduct',
+        component: NewProductComponent
+      },
+      {
+        path:'details/:id',
+        component: ProductDetailsComponent
       }
       ]
   }
@@ -58,5 +68,6 @@ export const routingComponents = [HomeComponent,
                                   CartComponent,
                                   AdminComponent,
                                   ViewProductsComponent,
-                                  EditDetailsComponent
+                                  EditDetailsComponent,
+                                  NewProductComponent
                                 ]

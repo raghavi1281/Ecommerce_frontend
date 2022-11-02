@@ -1,12 +1,15 @@
 <nav class="row align-items-center p-1 ps-3" style="background-color: #354A93; color: white;">
-    <div class="col-1 "><a routerLink="Products" style="text-decoration: none; color: white;">Home</a>
+    <div class="col-1 "><a routerLink="Products" style="text-decoration: none; color: white;">Home</a></div>
+    <div class="col-2">
+        <button class="btn btn-light btn-sm" routerLink="newProduct">Add Product</button>
     </div>
-      <div class="col-6 offset-md-2">
+      <div class="col-6 ">
         <form class="d-flex justify-content-center" role="search">
           <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-light rounded-pill" type="submit"><img class="icon" src="../../assets/search.png" alt="search" style="height: 20px;width:20px"></button>
         </form>
       </div>
+
   </nav>
   <router-outlet></router-outlet>
   

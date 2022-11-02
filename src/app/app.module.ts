@@ -11,6 +11,10 @@ import { freeApiService } from './services/freeapi.service';
 import { DetailsComponent } from './details/details.component';
 import { ViewProductsComponent } from './view-products/view-products.component';
 import { EditDetailsComponent } from './edit-details/edit-details.component';
+import { NewProductComponent } from './new-product/new-product.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+
 
 @NgModule({
   declarations: [
@@ -21,11 +25,15 @@ import { EditDetailsComponent } from './edit-details/edit-details.component';
     HeaderComponent,
     DetailsComponent,
     ViewProductsComponent,
-    EditDetailsComponent
+    EditDetailsComponent,
+    NewProductComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
     HttpClientModule
   ],
   providers: [freeApiService],

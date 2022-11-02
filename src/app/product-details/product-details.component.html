@@ -8,9 +8,11 @@
         <div class="col-3">
             <p class="card-title">{{product.name}}</p>
             <p>{{product.price}}</p>
-            <div class="btn btn-primary btn-sm m-auto mb-0" (click)="addToCart(product)">Add to cart</div>
+            <button class="btn btn-primary m-2" (click)="giveDetails(product)" routerLink="../../editDetails">Update</button>
+            <button class="btn btn-primary m-2">Delete</button>
         </div>
         <p class="col-6">{{product.description}}</p>
     </div>
 </div>
+
 
