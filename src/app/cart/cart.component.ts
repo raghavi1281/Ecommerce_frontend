@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { freeApiService } from '../services/freeapi.service';
-import { products } from '../classes/products';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-cart',
@@ -9,17 +8,13 @@ import { products } from '../classes/products';
 })
 export class CartComponent implements OnInit {
 
-  productslist!: products[];
+  items = this.cartService.getItems();
 
-  constructor(private _freeapiservice: freeApiService) { }
-
+  constructor(
+    private cartService: CartService
+  ) { }
   ngOnInit(): void {
-    this._freeapiservice.getProductsinCart().subscribe(
-      data=>
-      {
-          this.productslist = data;
-      }
-    )
+    
   }
 
 }

@@ -11,12 +11,13 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path: 'home', component:HomeComponent,
   children: [
+
     {
         path: 'product',
         component: ProductComponent
     },
     {
-      path:'product/details',
+      path: 'details/:id',
       component: DetailsComponent
     },
     {
@@ -25,6 +26,7 @@ const routes: Routes = [
     }
     ]
   }
+  
 ];
 
 @NgModule({

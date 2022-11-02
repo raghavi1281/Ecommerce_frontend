@@ -15,12 +15,6 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit(): void {
     
-   /* this._freeapiservice.getProductdetails(id).subscribe(
-      data=>
-      {
-          this.productslist = data;
-      }
-    )*/
   }
 
 }
