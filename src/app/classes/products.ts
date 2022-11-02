@@ -1,6 +1,12 @@
 
 export class products
 {
+    /*prodID!:string;
+    prodName!:string;
+    prodDes!:string;
+    prodPrice!:number;
+    prodImg!:string;
+    prodStock!:number;*/
     id!:number;
     brand!:string
     name!: string;

@@ -5,6 +5,9 @@ import { ProductComponent } from './product/product.component';
 import { LoginComponent } from './login/login.component';
 import { DetailsComponent } from './details/details.component';
 import { CartComponent } from './cart/cart.component';
+import { AdminComponent } from './admin/admin.component';
+import { ViewProductsComponent } from './view-products/view-products.component';
+import { EditDetailsComponent } from './edit-details/edit-details.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
@@ -25,6 +28,20 @@ const routes: Routes = [
       component: CartComponent
     }
     ]
+  },
+  {
+    path: "admin", component:AdminComponent,
+    children: [
+
+      {
+          path: 'Products',
+          component: ViewProductsComponent
+      },
+      {
+        path:'editDetails',
+        component: EditDetailsComponent
+      }
+      ]
   }
   
 ];
@@ -38,5 +55,8 @@ export const routingComponents = [HomeComponent,
                                   ProductComponent, 
                                   LoginComponent,
                                   DetailsComponent,
-                                  CartComponent
+                                  CartComponent,
+                                  AdminComponent,
+                                  ViewProductsComponent,
+                                  EditDetailsComponent
                                 ]

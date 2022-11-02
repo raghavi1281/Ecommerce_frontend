@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import {HttpClientModule} from '@angular/common/http';
 import { freeApiService } from './services/freeapi.service';
 import { DetailsComponent } from './details/details.component';
+import { ViewProductsComponent } from './view-products/view-products.component';
+import { EditDetailsComponent } from './edit-details/edit-details.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { DetailsComponent } from './details/details.component';
     AdminComponent,
     CartComponent,
     HeaderComponent,
-    DetailsComponent
+    DetailsComponent,
+    ViewProductsComponent,
+    EditDetailsComponent
   ],
   imports: [
     BrowserModule,

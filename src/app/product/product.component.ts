@@ -9,6 +9,7 @@ import { CartService } from '../cart.service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
+  
 
   productslist!: products[];
 
@@ -25,7 +26,7 @@ export class ProductComponent implements OnInit {
 
   addToCart(product: products) {
     this.cartService.addToCart(product);
-    window.alert('Your product has been added to the cart!');
   }
 
 }
+

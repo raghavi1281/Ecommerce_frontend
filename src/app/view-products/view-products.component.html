@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let product of productslist" class="row shadow-sm p-3 justify-content-center align-items-center">
+                    <div class="col">{{product.name}}</div>
+                    <div class="col-2">{{product.price}} {{product.currency}}</div>
+                    <div class="col-2">
+                        <div class="btn">
+                           <a routerLink="../editDetails" style="color: black;">
+                            <span class="material-symbols-outlined">
+                                edit
+                            </span>
+                           </a> 
+                        </div>
+                        
+                        <div class="btn">
+                            <span class="material-symbols-outlined">
+                            delete
+                            </span>
+                        </div>
+                    </div>
+            <!--Modal-->
+        </div>
+    </div>
+</div>
+
