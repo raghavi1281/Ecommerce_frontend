@@ -4,10 +4,20 @@
         <button class="btn btn-light btn-sm" routerLink="newProduct">Add Product</button>
     </div>
       <div class="col-6 ">
-        <form class="d-flex justify-content-center" role="search">
+        <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+          <div class="form-group d-flex justify-content-center">
+            <input type="text" formControlName="search" class="form-control me-2 rounded-pill"  
+              placeholder="search"
+              [ngClass]="{ 'is-invalid': submitted }" />
+              <button class="btn btn-light rounded-pill" type="submit">
+                <img class="icon" src="../../assets/search.png" alt="search" style="height: 20px;width:20px">
+              </button>
+          </div>
+        </form>
+        <!--<form class="d-flex justify-content-center" role="search">
           <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-light rounded-pill" type="submit"><img class="icon" src="../../assets/search.png" alt="search" style="height: 20px;width:20px"></button>
-        </form>
+        </form>-->
       </div>
 
   </nav>

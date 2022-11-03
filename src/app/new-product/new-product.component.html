@@ -4,7 +4,7 @@
         <div class="form-group">
           <input type="text" formControlName="prodID" class="form-control m-2 border-0 border-bottom border-primary rounded-0 shadow-sm p-2"  
             placeholder="Product ID"
-            [ngClass]="{ 'is-invalid': submitted && f['prodID'].errors }" />
+            [ngClass]="{ 'is-invalid': submitted && f['prodID'].errors }" required/>
           <div *ngIf="submitted && f['prodID'].errors" class="invalid-feedback">
               <div *ngIf="f['prodID'].errors['required']">Product ID is required</div>
           </div>

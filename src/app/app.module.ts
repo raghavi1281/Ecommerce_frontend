@@ -14,6 +14,8 @@ import { EditDetailsComponent } from './edit-details/edit-details.component';
 import { NewProductComponent } from './new-product/new-product.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { SearchPageComponent } from './search-page/search-page.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     ViewProductsComponent,
     EditDetailsComponent,
     NewProductComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    SearchPageComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,11 @@
 <div class="container-fluid">
     <div class="row justify-content-center align-items-center">
-        <div class="col-4">
+        <div class="col-3">
             <img src="{{product.image_link}}" class="card-img-top" alt="...">
             
             
         </div>
-        <div class="col-3">
+        <div class="col-4">
             <p class="card-title">{{product.name}}</p>
             <p>{{product.price}}</p>
             <button class="btn btn-primary m-2" (click)="giveDetails(product)" routerLink="../../editDetails">Update</button>

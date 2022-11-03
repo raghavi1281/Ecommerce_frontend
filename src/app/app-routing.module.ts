@@ -10,9 +10,11 @@ import { ViewProductsComponent } from './view-products/view-products.component';
 import { EditDetailsComponent } from './edit-details/edit-details.component';
 import { NewProductComponent } from './new-product/new-product.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/login', pathMatch:'full'},
+  {path:'checkout',component:CheckoutComponent},
   {path:'login', component:LoginComponent},
   {path: 'home', component:HomeComponent,
   children: [
